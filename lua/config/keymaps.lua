@@ -15,3 +15,6 @@ vim.api.nvim_set_keymap("i", "<Up>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<Down>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<Left>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<Right>", "<NOP>", { noremap = true, silent = true })
+
+vim.api.nvim_set_keymap("n", "<Del>", "<NOP>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<Del>", "<NOP>", { noremap = true, silent = true })

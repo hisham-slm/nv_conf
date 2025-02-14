@@ -28,6 +28,16 @@ vim.api.nvim_set_keymap("n", "<BS>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Del>", "<NOP>", { noremap = true, silent = true })
 
 --keybinds for whole texts
-vim.api.nvim_set_keymap("n", "<leader>ay", "ggVGy", { noremap = true, silent = true, desc = "Yank all" })
-vim.api.nvim_set_keymap("n", "<leader>ad", "ggVGd", { noremap = true, silent = true, desc = "Delete all" })
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>ay",
+  ":silent! execute 'normal! ggVGy'<CR>",
+  { noremap = true, silent = true, desc = "Yank all" }
+)
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>ad",
+  ":silent! execute 'normal! ggVGd'<CR>",
+  { noremap = true, silent = true, desc = "Delete all" }
+)
 vim.api.nvim_set_keymap("n", "<leader>av", "ggVG", { noremap = true, silent = true, desc = "Select all" })

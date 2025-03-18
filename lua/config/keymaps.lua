@@ -10,20 +10,23 @@ vim.api.nvim_set_keymap("n", "<Up>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Down>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Left>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Right>", "<NOP>", { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap("v", "<Up>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<Down>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<Left>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("v", "<Right>", "<NOP>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("c", "<Up>", "<NOP>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("c", "<Down>", "<NOP>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("c", "<Left>", "<NOP>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("c", "<Right>", "<NOP>", { noremap = true, silent = true })
+
+-- vim.api.nvim_set_keymap("c", "<Up>", "<NOP>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("c", "<Down>", "<NOP>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("c", "<Left>", "<NOP>", { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap("c", "<Right>", "<NOP>", { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap("i", "<Up>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<Down>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<Left>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<Right>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("i", "<Del>", "<NOP>", { noremap = true, silent = true })
+
 vim.api.nvim_set_keymap("n", "<BS>", "<NOP>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<Del>", "<NOP>", { noremap = true, silent = true })
 
@@ -41,3 +44,5 @@ vim.api.nvim_set_keymap(
   { noremap = true, silent = true, desc = "Delete all" }
 )
 vim.api.nvim_set_keymap("n", "<leader>av", "ggVG", { noremap = true, silent = true, desc = "Select all" })
+vim.api.nvim_set_keymap("n", "<leader>o", ":e ~/Documents/Obsidian Vault/<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<leader>p", ":MarkdownPreview<CR>", { noremap = true, silent = true })

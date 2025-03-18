@@ -211,4 +211,21 @@ return {
       },
     },
   },
+
+  -- Markdown preview (live preview inside Neovim)
+  { "iamcco/markdown-preview.nvim", build = "cd app && npm install", ft = "markdown" },
+
+  -- Obsidian.nvim for better vault integration
+  {
+    "epwalsh/obsidian.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {
+      workspaces = {
+        {
+          name = "MyVault",
+          path = "~/path/to/your/obsidian/vault",
+        },
+      },
+    },
+  },
 }

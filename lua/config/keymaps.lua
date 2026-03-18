@@ -46,3 +46,6 @@ vim.api.nvim_set_keymap(
 vim.api.nvim_set_keymap("n", "<leader>av", "ggVG", { noremap = true, silent = true, desc = "Select all" })
 vim.api.nvim_set_keymap("n", "<leader>o", ":e ~/Documents/Obsidian Vault/<CR>", { noremap = true, silent = true })
 vim.api.nvim_set_keymap("n", "<leader>p", ":MarkdownPreview<CR>", { noremap = true, silent = true })
+
+-- exit terminal mode with esc keymap
+vim.keymap.set("t", "kj", "<C-\\><C-n>", { desc = "Exit terminal mode" })

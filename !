@@ -1,0 +1,9 @@
+NVIM v0.12.2
+Build type: Release
+LuaJIT 2.1.1774896198
+Vim versions: 8.1, 8.2, 9.0, 9.1, 9.2
+
+   system vimrc file: "$VIM/sysinit.vim"
+  fall-back for $VIM: "/opt/homebrew/Cellar/neovim/0.12.2/share/nvim"
+
+Run :checkhealth for more info
